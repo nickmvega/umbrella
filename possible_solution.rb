@@ -14,7 +14,7 @@ puts "Checking the weather at #{user_location}...."
 
 # Get the lat/lng of location from Google Maps API
 
-gmaps_key = ENV.fetch("GMAPS_KEY")
+gmaps_key = "AIzaSyDKz4Y3bvrTsWpPRNn9ab55OkmcwZxLOHI"
 
 gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{user_location}&key=#{gmaps_key}"
 
@@ -41,7 +41,7 @@ puts "Your coordinates are #{latitude}, #{longitude}."
 
 # Get the weather from Pirate Weather API
 
-pirate_weather_key = ENV.fetch("PIRATE_WEATHER_KEY")
+pirate_weather_key = "3RrQrvLmiUayQ84JSxL8D2aXw99yRKlx1N4qFDUE"
 
 pirate_weather_url = "https://api.pirateweather.net/forecast/#{pirate_weather_key}/#{latitude},#{longitude}"
 
